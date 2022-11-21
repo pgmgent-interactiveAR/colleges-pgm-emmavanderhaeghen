@@ -11,11 +11,19 @@
 <body>
     <a-scene arjs>
         <a-marker preset="hiro">
+            <!-- <a-entity
+                position="0 0 0"
+                scale="0.1 0.1 0.1">
+                <a-sphere
+                    color="red"
+                    radius="5">
+                </a-sphere>
+            </a-entity> -->
             <a-entity
-            position="0 0 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="./obj/tree.obj"
-          ></a-entity>
+                position="0 0 0"
+                scale="0.05 0.05 0.05"
+                obj-model="obj: url(obj/tree.obj)">
+            </a-entity>
         </a-marker>
         <a-entity camera position="0 0 0"></a-entity>
     </a-scene>
