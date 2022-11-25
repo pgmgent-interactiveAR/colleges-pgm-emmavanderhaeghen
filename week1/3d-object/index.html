@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>3d Object</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs> 
+        <a-assets>
+            <a-asset-item id="dino" src="assets/dino.glb"></a-asset-item>
+        </a-assets>
+        <a-marker preset="hiro">
+            <a-entity position="0 0 0" scale="0.1 0.1 0.1">
+                <a-entity gltf-model="#dino" scale="0.5 O.5 0.5"></a-entity>
+            </a-entity>
+        </a-marker>
+        <a-entity camera position="0 0 0"></a-entity>
+    </a-scene>
+</body>
+</html>
