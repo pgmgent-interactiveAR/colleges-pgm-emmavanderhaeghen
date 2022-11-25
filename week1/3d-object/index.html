@@ -16,7 +16,11 @@
         </a-assets>
         <a-marker preset="hiro">
             <a-entity position="0 0 0" scale="0.1 0.1 0.1">
-                <a-entity gltf-model="#dino" scale="0.5 O.5 0.5"></a-entity>
+                <a-entity 
+                gltf-model="#dino" 
+                scale="0.5 O.5 0.5" 
+                position="0 0 0" 
+                animation-mixer="clip:die1; loop:infinite; timeScale= .3"></a-entity>
             </a-entity>
         </a-marker>
         <a-entity camera position="0 0 0"></a-entity>
