@@ -4,22 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face.prod.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face-aframe.prod.js"></script>
 </head>
 <body>
     <a-scene 
+    arjs
     mindar-face 
     embedded 
     color-space="sRGB" 
     renderer="colorManagement: true, physicallyCorrectLights" 
     vr-mode-ui="enabled: false" 
     device-orientation-permission-ui="enabled: false">
+
         <a-assets>
             <a-asset-item 
             id="glasses" 
             src="assets/glasses.glb">
             </a-asset-item> 
         </a-assets>
+
         <a-camera 
         active="false" 
         position="0 0 0">
@@ -27,12 +29,21 @@
 
         <a-entity 
         mindar-face-target="anchorIndex: 1">
-            <a-gltf-model rotation="-20 0 0" position="0 0 -.1" scale="6 6 6" src="#glasses"></a-gltf-model>
+
+
+            <a-gltf-model 
+            rotation="-20 0 0" 
+            position="0 0 -.1" 
+            scale="6 6 6" 
+            src="#glasses">
+            </a-gltf-model>
+
             <a-sphere 
             color="green" 
             radius="0.1">
             </a-sphere>
         </a-entity>
+
     </a-scene>
 </body>
 </html>
