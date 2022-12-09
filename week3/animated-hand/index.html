@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- change for line -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Document</title>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <style>
+            body{
+                width: 100%;
+                height: 100%;
+            }
+            a-scene{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="hand" response-type="arraybuffer" src="./assets/hand-animated.glb"></a-asset-item>
+            </a-assets>
+            <a-gltf-model gltf-model="#hand" scale="0.5 0.5 0.5" position="0 0 -5" rotation="0 180 0" animation-mixer="clip:fist; loop:infinite; timeScale: .1; crossFadeDuration: 1;"></a-gltf-model>
+        </a-scene>
+    </body>
+</html>
