@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelmosher</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="display-cover">
+        <video autoplay id="video" class="hidden"></video>
+        <canvas class="hidden"></canvas>
+        <div class="video-options">
+            <select name="" id="" class="custom-select">
+                <option value="">Select camera</option>
+            </select>
+        </div>
+        <img src="" alt="" class="screenshot-image hidden">
+        <div class="controls">
+            <button class="button-play play" title="Play">&#x1F3A5</button>
+            <button class="button-pause pause hidden" title="Pause">II</button>
+            <button class="button-screenshot screenshot hidden" title="ScreenShot">&#x1F4F7</button>
+        </div>
+    </div>
+    <canvas class="canvas canvas-start" id="canvas-start"></canvas>
+    <canvas class="canvas canvas-effect" id="canvas-effect"></canvas>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
