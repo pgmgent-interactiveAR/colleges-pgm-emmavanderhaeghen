@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "openssl": "^2.0.0"
+    "openssl": "^2.0.0",
+    "three": "^0.148.0",
+    "three-gltf-loader": "^1.111.0"
   }
 }
